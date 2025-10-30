@@ -1,0 +1,57 @@
+    /* Basic page styling */
+    body {
+      background: #000;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+      color: #00adb5;
+    }
+
+    /* Progress bar container */
+    .progress-container {
+      width: 80%;
+      max-width: 600px;
+      background: #222;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 173, 181, 0.3);
+      height: 25px;
+    }
+
+    /* Progress fill */
+    .progress-bar {
+      height: 100%;
+      width: 0%; /* You can change this with JS */
+      background: linear-gradient(90deg, #ff4d00, #ff4d00);
+      border-radius: 20px;
+      transition: width 0.4s ease-in-out;
+    }
+
+    /* Percentage text */
+    .progress-text {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #ccc;
+      text-align: center;
+    }
+
+    /* Optional: glowing animation */
+    .progress-bar.glow {
+      box-shadow: 0 0 20px #00ffc3;
+    }
+
+    .progress-msg{
+        display: none;
+        transition: .5s;
+        color: orange;
+    }
