@@ -6,7 +6,7 @@
 
     let range = 0;
     let bar = setInterval(function (e) {
-        if(range < 100){
+        if(range <= 100){
             progressBar.style.width = `${range}%`;
             progressBar.textContent = `${range}%`;
             progressText.textContent = `${range}%`;
@@ -16,7 +16,19 @@
                 msg.style.padding = '10px';
             }
         }
+
+         if (range === 100) {
+    //   clearInterval(bar); // stop progress
+      setTimeout(() => {
+        alert('Download has been completed ✅');
+      }, 500); // small delay for smoothness
+    }
+
+
         range ++;
  
     }, 100);
 
+
+      
+ 
